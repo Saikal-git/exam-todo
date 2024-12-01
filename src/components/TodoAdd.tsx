@@ -13,7 +13,7 @@ const TodoAdd = () => {
     const formData = new FormData();
     formData.append("file", file);
     const { data: responseImage } = await uploadFileMutation(formData);
-    let newDAta = {
+    const newDAta = {
       title: data.title,
       description: data.description,
       img: responseImage?.url,
