@@ -14,6 +14,4 @@ namespace TODO {
 	type DeleteTodoResponse = ITodo[];
 	type DeleteTodoRequest = number;
 
-	type DeleteAllTodoResponse = ITodo[];
-	type DeleteAllTodoRequest = void;
 }
