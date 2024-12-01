@@ -10,7 +10,7 @@ const api = index.injectEndpoints({
       }),
       providesTags: ["todo"],
     }),
-    postTodos: builder.mutation<TODO.GetTodosResponse, TODO.GetTodosRequest>({
+    postTodos: builder.mutation({
       query: (data) => ({
         url: `${ENDPOINT}`,
         method: "POST",
